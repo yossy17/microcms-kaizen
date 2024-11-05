@@ -1,0 +1,143 @@
+:root {
+  --color-bg-white: #464957; /* Main Bg */
+  --color-bg-white-rgb: 70, 73, 87; /* Main Bg rgba */
+  --color-bg-purple-light: #2d2f38; /* Secondary Bg ( e.g. Sidebar ) */
+  --color-effect-blue: #383a46; /* Hover Bg */
+  --color-bg-info: #383a46; /* Info Bg */
+  --color-bg-caution: #383a46; /* Caution Bg */
+  --color-bg-purple: #383a46;
+  --color-bg-purple: #383a46; /* Repeat Add Button */
+
+  --color-text-main: #e2e2dd; /* Main Text */
+  --color-text-main-rgb: 226, 226, 221; /* Main Text rgba */
+  --color-text-sub: #e8e8e4; /* Secondary Text ( e.g. Headline ) */
+  --color-text-off: #eeeeeb; /* Off Text */
+  --color-text-link: #f9f9f8; /* Link Text */
+
+  --color-text-current: #eec968; /* Current Text */
+  --color-bg-current: #383a46; /* Current Bg */
+
+  --color-bg-disabled: #5a5a66; /* Disabled Bg */
+
+  --color-bg-error: #da363233; /* Error Bg */
+  --color-bg-success: #00921b33; /* Success Bg */
+
+  --color-accent-purple: #c29523; /* Accent */
+
+  --color-primary: #c29523; /* Accent */
+
+  --color-text-codeblock: #abb2bf; /* Code Block Text */
+  --color-bg-codeblock: #22272e; /* Code Block Bg */
+
+  --color-scrollbar-track: #ecdcb2;
+
+  --color-twitter: #1da1f2;
+  /* --color-bg-caution: #faf6da; */
+}
+
+html {
+  scrollbar-color: var(--color-accent-purple) var(--color-scrollbar-track) !important;
+  background-color: var(--color-bg-white) !important;
+}
+
+/* --- */
+
+#richEditor-v2-editorWrapper,
+._main_1ve44_21 {
+  scrollbar-width: none !important;
+}
+
+._thead_1r8jv_53 {
+  background-color: transparent !important;
+}
+
+/* --- */
+
+path.recharts-rectangle,
+path.recharts-curve.recharts-area-area,
+path._asc_1ehid_18._on_1ehid_21,
+path._desc_1ehid_26._on_1ehid_21 {
+  fill: var(--color-text-current) !important;
+}
+
+path.recharts-curve.recharts-area-curve {
+  stroke: var(--color-primary);
+}
+
+i._typeButton_wckqw_420._active_wckqw_433 {
+  fill: var(--color-text-current) !important;
+}
+
+tspan {
+  fill: rgba(var(--color-text-main-rgb), 0.75) !important;
+}
+
+.recharts-default-tooltip {
+  background-color: var(--color-bg-white) !important;
+}
+
+.recharts-tooltip-label {
+  color: rgba(var(--color-text-main-rgb), 0.75) !important;
+}
+
+select,
+.recharts-tooltip-item {
+  color: var(--color-text-main) !important;
+}
+
+a[data-testid="link-settings"] > i,
+button._trigger_1tmzz_6[aria-haspopup="dialog"]
+  span.material-icons._small_1n56o_1,
+a._link_3s15a_1 > i,
+._labelButton_1ypco_13 span.material-icons._small_1n56o_1,
+button._labelButton_1fhag_1 > i.material-icons {
+  transition-duration: 100ms !important;
+}
+
+a[data-testid="link-settings"] > i:hover,
+button._trigger_1tmzz_6[aria-haspopup="dialog"]:hover
+  span.material-icons._small_1n56o_1,
+a._link_3s15a_1:hover > i,
+._labelButton_1ypco_13:hover span.material-icons._small_1n56o_1,
+button._labelButton_1fhag_1:hover > i.material-icons {
+  transform: rotateZ(30deg) !important;
+}
+
+/* --- */
+
+/* --- */
+
+ul._lists_1miyw_85[data-testid="announcement-list"] *[style] {
+  color: var(--color-text-main) !important;
+  background-color: transparent !important;
+}
+
+/* --- */
+
+button._createServiceCard_102av_36,
+button._createApiCard_sdvuw_36 {
+  background-color: transparent !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+button._createServiceCard_102av_36:hover,
+button._createApiCard_sdvuw_36:hover {
+  border: 1px solid var(--color-accent-purple) !important;
+}
+
+._code_d4vhq_178 > pre {
+  color: var(--color-text-codeblock) !important;
+  background: var(--color-bg-codeblock) !important;
+}
+
+._button_1ru2j_1._x_1ru2j_31._outline_1ru2j_34 {
+  color: var(--color-twitter) !important;
+  border: 1px solid var(--color-twitter) !important;
+}
+
+._sns_1miyw_78 > ._button_1ru2j_1._outline_1ru2j_34._x_1ru2j_31 > svg > path {
+  d: path(
+    "M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
+  ) !important;
+  fill: var(--color-twitter) !important;
+}
